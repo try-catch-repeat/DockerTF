@@ -4,16 +4,17 @@ Docker File containing the Tensorflow image that is used on all the tutorials of
 
 ## Installation Instructions
 
-Pull download the repo and install the docker using the following command at the root of the repo
+1) Open the terminal
 
+2) Pull the repo and install the docker using the following command at the root of the repo
 
 `docker build -t sandbox:latest .`
 
-Once the image is build start the container with
+3) Once the image is build start the container with
 
-`docker run -d --tag sandbox_env sandbox:latest`
+`docker run -td --name sandbox_env tf-sandbox:latest`
 
-and enter the interactive shell with
+4) enter the interactive shell with
 
 `docker exec -it sandbox_env bash`
 

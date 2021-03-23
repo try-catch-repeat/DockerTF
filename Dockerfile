@@ -1,5 +1,8 @@
 FROM ubuntu:20.04
 
+ENV TZ=Europe/Athens
+
+ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y \
 	libopencv-dev \
@@ -19,3 +22,6 @@ RUN pip3 install tensorflow && \
     pip3 install keras --no-deps && \
     pip3 install opencv-python && \
     pip3 install imutils
+
+
+RUN apt-get update
