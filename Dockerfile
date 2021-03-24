@@ -23,3 +23,7 @@ RUN pip3 install tensorflow && \
     pip3 install opencv-python && \
     pip3 install imutils
 
+RUN \
+   echo 'alias python="/usr/bin/python3"' >> ~/.bashrc && \
+   echo 'alias pip="/usr/bin/pip3"' >> ~/.bashrc && \
+   . /root/.bashrc
