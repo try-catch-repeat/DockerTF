@@ -12,7 +12,7 @@ Docker File containing the Tensorflow image that is used on all the tutorials of
 
 3) Once the image is build start the container with
 
-`docker run -td --name sandbox_env tf-sandbox:latest`
+`docker run -td --name sandbox --mount type=bind,source="$(pwd)\channel-tutorials",target=/app tf-sandbox:latest`
 
 4) enter the interactive shell with
 
