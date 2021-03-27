@@ -16,6 +16,6 @@ Docker File containing the Tensorflow image that is used on all the tutorials of
 
 4) enter the interactive shell with
 
-`docker exec -it sandbox_env bash`
+`docker exec -it sandbox bash`
 
 You now have shell access and can enter the python shell to follow the tutorials.
